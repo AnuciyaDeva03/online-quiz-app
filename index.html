@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <h1>Online Quiz Application</h1>
+            <p>Test your knowledge with our interactive quiz!</p>
+            <div class="user-input">
+                <input type="text" id="username" placeholder="Enter your name" required>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div class="quiz-info">
+                    <span id="question-count">Question 1 of 10</span>
+                    <span id="timer">30s</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options">
+                    <!-- Options will be dynamically generated -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button id="prev-btn" disabled>Previous</button>
+                <button id="next-btn" disabled>Next</button>
+                <button id="submit-btn" style="display: none;">Submit Quiz</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <h1>Quiz Complete!</h1>
+            <div class="results-summary">
+                <div class="score-circle">
+                    <span id="final-score">0%</span>
+                </div>
+                <div class="results-details">
+                    <p>Hello <span id="player-name"></span>!</p>
+                    <p>You scored <span id="correct-answers">0</span> out of <span id="total-questions">10</span></p>
+                    <p>Time taken: <span id="time-taken">0</span> seconds</p>
+                    <p class="performance-message" id="performance-msg"></p>
+                </div>
+            </div>
+
+            <div class="results-breakdown">
+                <h3>Question Review</h3>
+                <div id="question-review"></div>
+            </div>
+
+            <div class="results-actions">
+                <button id="restart-btn">Take Quiz Again</button>
+                <button id="share-btn">Share Results</button>
+            </div>
+        </div>
+
+        <!-- Admin Panel -->
+        <div id="admin-panel" class="screen">
+            <h2>Quiz Administration</h2>
+            <div class="admin-section">
+                <h3>Add New Question</h3>
+                <form id="question-form">
+                    <input type="text" id="new-question" placeholder="Enter question" required>
+                    <input type="text" id="option1" placeholder="Option 1" required>
+                    <input type="text" id="option2" placeholder="Option 2" required>
+                    <input type="text" id="option3" placeholder="Option 3" required>
+                    <input type="text" id="option4" placeholder="Option 4" required>
+                    <select id="correct-option" required>
+                        <option value="">Select correct answer</option>
+                        <option value="0">Option 1</option>
+                        <option value="1">Option 2</option>
+                        <option value="2">Option 3</option>
+                        <option value="3">Option 4</option>
+                    </select>
+                    <select id="question-difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <button type="submit">Add Question</button>
+                </form>
+            </div>
+            
+            <div class="admin-section">
+                <h3>Existing Questions</h3>
+                <div id="questions-list"></div>
+            </div>
+            
+            <button id="back-to-quiz">Back to Quiz</button>
+        </div>
+    </div>
+
+    <!-- Admin Access Button (Hidden) -->
+    <div id="admin-access" style="position: fixed; bottom: 10px; right: 10px;">
+        <button id="admin-btn" style="background: #666; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Admin</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
