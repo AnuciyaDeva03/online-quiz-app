@@ -1,4 +1,4 @@
-📄 README.md
+
 # 🧠 Online Quiz App
 
 This is a simple and fun quiz application built using **HTML**, **CSS**, and **JavaScript**. It allows users to test their knowledge across different topics and difficulty levels. The app gives instant feedback, shows results, and even includes an admin panel to manage questions.
@@ -24,3 +24,9 @@ This is a simple and fun quiz application built using **HTML**, **CSS**, and **J
    ```bash
    git clone https://github.com/AnuciyaDeva03/online-quiz-app.git
    cd online-quiz-app
+
+2. Open the app in any web browser:
+
+   - Just double-click on index.html
+
+   - No server or internet required
