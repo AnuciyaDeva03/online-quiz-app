@@ -1,39 +1,25 @@
-# 🎯 Online Quiz App
+# 🧠 Online Quiz App
 
-An interactive online quiz application built using **HTML**, **CSS**, and **JavaScript**. Users can test their knowledge across different difficulty levels and receive performance feedback. Includes an admin panel to manage quiz questions.
-
----
-
-## 🚀 Features
-
-- 👤 User-friendly welcome screen with name and difficulty selection
-- 🧠 Randomized quiz questions with progress bar and timer
-- ✅ Instant answer selection with visual feedback
-- 📊 Final results with performance summary and question review
-- 🔁 Option to restart or share results
-- 🛠️ Admin panel to add, view, and delete questions
-- 💾 Uses `localStorage` to persist data
-- 🎯 Keyboard navigation support
+This is a simple and fun quiz application built using **HTML**, **CSS**, and **JavaScript**. It allows users to test their knowledge across different topics and difficulty levels. The app gives instant feedback, shows results, and even includes an admin panel to manage questions.
 
 ---
 
-## 📸 Screenshots
+## 🔥 Features
 
-
+- Welcome screen to enter your name and select difficulty (easy, medium, hard)
+- Timer-based questions with a progress bar
+- Multiple-choice questions with clickable options
+- Final score and performance summary at the end
+- Option to review correct and wrong answers
+- Admin panel to add and delete quiz questions
+- Responsive design for mobile and desktop
+- Works completely offline using browser storage
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 How to Use
 
-- **Frontend:** HTML, CSS (Flexbox, Grid), JavaScript (ES6)
-- **Data Handling:** `localStorage`
-- **No external frameworks or libraries used**
-
----
-
-## 📂 Project Structure
-
-online-quiz-app/
-├── index.html # Main HTML file
-├── style.css # All styles
-└── script.js # Quiz logic and interactivity
+1. **Download or Clone** this project:
+   ```bash
+   git clone https://github.com/AnuciyaDeva03/online-quiz-app.git
+   cd online-quiz-app
