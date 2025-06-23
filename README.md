@@ -1,5 +1,6 @@
 # 📄 README.md
-# 🧠 Online Quiz App
+
+## 🧠 Online Quiz App
 
 This is a simple and fun quiz application built using **HTML**, **CSS**, and **JavaScript**. It allows users to test their knowledge across different topics and difficulty levels. The app gives instant feedback, shows results, and even includes an admin panel to manage questions.
 
